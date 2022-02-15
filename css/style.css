@@ -1,19 +1,42 @@
 * {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 }
 body {
-	background-color: cadetblue;
-	padding: 2rem;
+	background-image: linear-gradient(
+		45deg,
+		hsl(240deg 21% 81%) 0%,
+		hsl(241deg 33% 77%) 11%,
+		hsl(241deg 41% 74%) 22%,
+		hsl(242deg 46% 70%) 33%,
+		hsl(242deg 50% 66%) 44%,
+		hsl(242deg 52% 62%) 56%,
+		hsl(241deg 54% 58%) 67%,
+		hsl(240deg 55% 54%) 78%,
+		hsl(238deg 58% 49%) 89%,
+		hsl(232deg 87% 41%) 100%
+	);
+	background-size: cover;
 	text-align: center;
-	font: 14px/26px 'Bungee', Helvetica, Arial, sans-serif;
-	color: #222;
+	font-family: 'Bungee', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
 	text-transform: uppercase;
+	color: #2c2c2c;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+.page {
+	width: 90vw;
+	margin: auto;
 }
 header {
-	font-size: 24px;
+	font-size: 1.5rem;
 	line-height: 48px;
+	color: #f8f8f8;
 }
 h4 {
 	font-size: 21px;
@@ -30,9 +53,10 @@ h3,
 h6 {
 	font-family: 'Bungee Shade', cursive;
 }
-
-#lolcatImage {
+#catLol-img {
 	max-width: 30em;
+	height: 25em;
+	border-radius: 10px;
 }
 blockquote {
 	font: 2em/1em 'Open Sans', sans-serif;
@@ -40,42 +64,44 @@ blockquote {
 	text-shadow: 2px 2px #000;
 	margin: -80px 0 100px 0;
 	color: #fff;
+	text-transform: uppercase;
 }
-
-blockquote:before {
-	content: '"';
-}
+blockquote:before,
 blockquote:after {
 	content: '"';
 }
-#lolcat {
+#catLol-img {
 	margin: 0 auto;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
-	border-radius: 10px;
-	border: 10px solid #222;
+	border-radius: 20px;
+	border: 5px solid #2c2c2c55;
+}
+main {
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.95em;
+	font-weight: bold;
 }
 select {
-	// A reset of styles, including removing the default dropdown arrow
 	appearance: none;
 	background-color: transparent;
 	border: none;
 	padding: 0 1em 0 0;
 	margin: 1rem;
-	width: 10vw;
-	font-family: inherit;
-	font-size: inherit;
+	width: fit-content;
 	cursor: inherit;
 	line-height: inherit;
 }
-#wakeUpTimeSelector,
-#lunchTimeSelector,
-#napTimeSelector {
-	padding: 10px 0;
+#wakeUpEvent-select,
+#lunchTimeEvent-select,
+#napTime-select {
+	padding: 2.5px 0;
 }
-#partyTimeButton {
+Button {
 	background-color: #222;
-	width: 300px;
+	width: 12em;
+	height: 3em;
 	font-family: 'Bungee', cursive;
 	font-size: 18px;
 	color: #fff;
@@ -83,9 +109,24 @@ select {
 	border-radius: 5px;
 	padding: 10px 0;
 	margin-top: 20px;
+	margin-bottom: 10px;
 }
-
-footer p {
+footer {
 	text-transform: uppercase;
 	font-size: 12px;
+}
+body.party {
+	background-image: linear-gradient(
+		45deg,
+		hsl(345deg 92% 52%) 0%,
+		hsl(356deg 96% 60%) 11%,
+		hsl(6deg 100% 61%) 22%,
+		hsl(14deg 100% 60%) 33%,
+		hsl(21deg 100% 58%) 44%,
+		hsl(27deg 100% 57%) 56%,
+		hsl(32deg 100% 56%) 67%,
+		hsl(37deg 99% 55%) 78%,
+		hsl(41deg 95% 55%) 89%,
+		hsl(46deg 91% 56%) 100%
+	);
 }
