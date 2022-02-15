@@ -44,31 +44,31 @@ let updateClock = function () {
     let lolcatImageJS = document.getElementById('catLol-img');
 
     if (time == partytime) {
-        image = "../images/party.jpg";
+        image = "images/party.jpg";
         messageText = "Let's party!";
     }
     else if (time == wakeuptime) {
-        image = "../images/wakeup.jpg";
+        image = "images/wakeup.jpg";
         messageText = "Wake up!";
     }
     else if (time == lunchtime) {
-        image = "../images/lunch.jpg";
+        image = "images/lunch.jpg";
         messageText = "Let's have some lunch!";
     }
     else if (time == naptime) {
-        image = "../images/sleep.jpg";
+        image = "images/sleep.jpg";
         messageText = "Sleep tight!";
     }
     else if (time < noon) {
-        image = "../images/wakeup.jpg";
+        image = "images/wakeup.jpg";
         messageText = "Good morning!";
     }
     else if (time >= evening) {
-        image = "../images/sleep.jpg";
+        image = "images/sleep.jpg";
         messageText = "Good evening!";
     }
     else {
-        image = "../images/main.jpg";
+        image = "images/main.jpg";
         messageText = "Good afternoon!";
     }
 
